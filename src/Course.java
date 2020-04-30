@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * This class defines a {@code Course} object which is a school course about a specific {@link Subject}.
  * It provides all the properties and methods necessary to manage a Course in the bigger context of the {@code School}.
  * A {@code Course} object contains all the properties getters and setters, and methods to enroll a {@link Student},
- * assign an {@link Instructor}, get the size of the course,  let the course advance for a day, and pretty-print all
+ * assign an {@link Instructor}, get the size of the course, let the course advance for a day, and pretty-print all
  * course's details.
  *
  * @author Giovanni Arcudi
