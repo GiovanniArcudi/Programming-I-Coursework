@@ -3,7 +3,7 @@ import java.lang.String;
 /**
  * This class defines a {@code Person} object, which in the context of the {@code School}, could be a {@code Student},
  * an {@code Instructor}, a {@code Teacher}, a {@code GUITrainer}, a {@code OOTrainer} or a {@code Demonstrator}.
- * A {@code Course} object contains all the properties getters and setters, that will be inherited by all its aforementioned
+ * A {@code Person} object contains all the properties getters and setters, that will be inherited by all its aforementioned
  * subclasses.
  *
  * @author Giovanni Arcudi
