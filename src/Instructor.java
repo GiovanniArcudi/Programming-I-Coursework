@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * It provides all the properties and methods necessary to manage an instructor in the bigger context of the {@code School}.
  * Each instructor, apart from the properties inherited from {@code Person}, has also an {@code assignedCourses} ArrayList
  * containing all the courses the instructor has been assigned and methods to: assign or unassign a Course, get the
- * assigned courses see if he or she can teach a specific {@code Subject} and and pretty-print all instructors's details.
+ * assigned courses, see if he or she can teach a specific {@code Subject} and and pretty-print all instructors's details.
  * Each instructor type subclass will have its own level of specialism, this will influence what subjects can teach.
  *
  * @author Giovanni Arcudi
