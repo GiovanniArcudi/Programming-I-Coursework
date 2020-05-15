@@ -1,6 +1,6 @@
-# Programming-I-Coursework
+# University of Southampton - Programming I Coursework
+## ECS Java Training School
 
-ECS Java Training School
 Author: Giovanni Arcudi (ga1g19@soton.ac.uk)
 
 0.1  - INFORMATION FOR MARKERS:
