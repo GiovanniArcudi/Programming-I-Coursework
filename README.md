@@ -1,7 +1,8 @@
 # University of Southampton - Programming I Coursework
-## ECS Java Training School
 
-Author: Giovanni Arcudi (ga1g19@soton.ac.uk)
+This repository contains the both Specifications and Source Code for the [COMP1202 - Programming I](https://www.southampton.ac.uk/courses/modules/comp1202.page) Coursework.
+
+## ECS Java Training School
 
 0.1  - INFORMATION FOR MARKERS:
 
