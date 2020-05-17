@@ -42,7 +42,7 @@ The aim of this Coursework is to construct a simple simulation of a Java Trainin
 ### 0.3 -  Configuration File format:
 The simulator uses the format of the configuration file provided in the Coursework Specification. However, for the purposes of the extensions the format has been enhanced. 
 
-The format consists of CLASS_NAME and PROPERTIES.
+The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
   ### 0.3.1 VALID CLASS_NAMES EXAMPLES:
 
