@@ -80,10 +80,9 @@ The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 ### 1.0 - Extensions
 
 ### 1.1 - Subjects Prerequisite
-
-    Inspired by coursework specification I have decided to implement possible prerequisites for each Subject object.
-    This means that the user is able, via the configuration file, to decide if a students has to obtain the certificate for other subjects (specifing which of them by subjectID)
-    to enroll in a course about a specific subject.
+Inspired by Coursework Specifications I have decided to implement possible prerequisites for each Subject object.
+This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate
+for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
 
     1.1.1 - Modify the way the Configuration File is read by SimulationUtility
         To implement this idea I firstly have added to the SimulationUtility's subjectCreator(String properties) method the functionality of reading properties strings with one extra property.
@@ -104,7 +103,7 @@ The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
 
 
-1.2 - MULTIPLE COURSES HANDLING FOR INSTRUCTORS AND STUDENTS:
+### 1.2 - MULTIPLE COURSES HANDLING FOR INSTRUCTORS AND STUDENTS:
 
     Because I enjoyed working with the input handling from the configuration file, I decided to also implement the second of the proposed Extensions.
     Instructors are now able to teach more than one course in a day (up to a certain limit) and the students can enrol in more than on course at a time (up to a certain limit). 
