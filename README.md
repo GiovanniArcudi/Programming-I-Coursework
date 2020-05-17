@@ -81,6 +81,7 @@ The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
 ### 1.1 - Subjects Prerequisite
 Inspired by Coursework Specifications I have decided to implement possible prerequisites for each Subject object.
+
 This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
 
     1.1.1 - Modify the way the Configuration File is read by SimulationUtility
@@ -103,6 +104,7 @@ This means that the user is able, via the configuration file, to decide if a stu
 
 ### 1.2 - Multiple courses handling for Instructors and Students:
 Because I enjoyed working with the input handling from the configuration file, I decided to also implement the second of the proposed Extensions.
+
 Instructors are now able to teach more than one course in a day (up to a certain limit) and the students can enrol in more than one course at a time (up to a certain limit). 
     
      1.2.1 - Modify the way the Configuration File is read by SimulationUtility
@@ -120,7 +122,9 @@ Instructors are now able to teach more than one course in a day (up to a certain
 
 ### 1.3 - Person Generator:
 To have a more realistic simulation I decided to implement a Person Generator.
+
 Using the `createPerson(String)` method it creates a new `Person` object of the specified subclass, taking a random name and gender from the `RANDOM_NAMES_AND_GENDERS` 20x2 matrix and random generated age.
+
 It also keeps in consideration that the age limit for a Student is lower than the one of an Instructor.
 Being all self contained in the `PersonGenerator` class, I suggest to read the more detailed methods description from there.
 
@@ -132,4 +136,4 @@ It simply returns an ArrayList of the students enrolled in at least one course.
 Despite being a very basic concept, checking if a student is enrolled to ad least one course has proven to be repeatedly useful throughout the project development, to avoid iterating through all of them many times.  
 
 
-_@author_ _[Giovanni Arcudi]_(https://github.com/GiovanniArcudi)
+_@author_ [_Giovanni Arcudi_](https://github.com/GiovanniArcudi)
