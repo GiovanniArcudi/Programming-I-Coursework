@@ -135,5 +135,5 @@ It simply returns an ArrayList of the students enrolled in at least one course.
 
 Despite being a very basic concept, checking if a student is enrolled to ad least one course has proven to be repeatedly useful throughout the project development, to avoid iterating through all of them many times.  
 
-
+---
 _@author_ [_Giovanni Arcudi_](https://github.com/GiovanniArcudi)
