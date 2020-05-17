@@ -44,7 +44,7 @@ The simulator uses the format of the configuration file provided in the Coursewo
 
 The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
-  ### 0.3.1 VALID CLASS_NAMES EXAMPLES:
+    0.3.1 VALID CLASS_NAMES EXAMPLES:
 
         Example 1: (describes a school having name = "University of Southampton", maxEnrollableCourses = "2", maxAssignableCourses = "2"):
         school:University of Southamptonn,2,2
@@ -77,9 +77,9 @@ The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
 
 
-1.0 - EXTENSIONS
+### 1.0 - Extensions
 
-1.1 - SUBJECTS PREREQUISITE
+### 1.1 - Subjects Prerequisite
 
     Inspired by coursework specification I have decided to implement possible prerequisites for each Subject object.
     This means that the user is able, via the configuration file, to decide if a students has to obtain the certificate for other subjects (specifing which of them by subjectID)
