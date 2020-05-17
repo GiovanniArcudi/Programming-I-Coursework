@@ -6,7 +6,7 @@ This repository contains the both Specifications and Source Code for the [COMP12
 
 The aim of this Coursework is to construct a simple simulation of a Java Training School. This school will admit students and they will receive training by a team of specialist instructors. 
 
-### 0.1 - Information for Markers:
+### 0.1 - Information for markers:
 
     Completed parts of the coursework: 
     Parts 1-6.
@@ -24,7 +24,7 @@ The aim of this Coursework is to construct a simple simulation of a Java Trainin
           This implies that the accessor method for an Instructor's assigned courses will now return an 
           ArrayList<Course> rather than a Course object, therefore test TestPart3 cannot be passed unless modified.
 
-### 0.2  - COMMAND LINE USAGE:
+### 0.2  - Command Line usage:
 
     java Administrator [ConfigurationFileNme.txt] [Number Of Days]
 
