@@ -33,40 +33,35 @@ In the configuration file it is possible to specify the maximum number of course
 
 Similarly, if prerequisites for a Subject are not specified, the subject will be automaticaly sat to not have any prerequisites.
 
-Example way of invoking the program:
-```java Administrator Configuration.txt 100```
+Example way of invoking the program:```java Administrator Configuration.txt 100```.
 
 <br/>
 
 ### 0.3 -  Configuration File format:
+
 The simulator uses the format of the configuration file provided in the Coursework Specification. However, for the purposes of the extensions the format has been enhanced. 
 
 The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
-    0.3.1 VALID CLASS_NAMES EXAMPLES:
+#### 0.3.1 - Valid `CLASS_NAME` examples:
 
-        Example 1: (describes a school having name = "University of Southampton", maxEnrollableCourses = "2", maxAssignableCourses = "2"):
-        school:University of Southamptonn,2,2
+1. ```school:University of Southamptonn,2,2``` - Describes a school having name = "University of Southampton", maxEnrollableCourses = "2", maxAssignableCourses = "2".
 
-        Example 2: (describes a Subject having descriprtion = "Programming I", subjectID = "1", specialismID = "1", duration = "5" days, prerequisites = the course whose subjectID is "2"):
-        subject:Programming I, 1, 1, 5, 2
+2. ```subject:Programming I, 1, 1, 5, 2``` - Describes a Subject having descriprtion = "Programming I", subjectID = "1", specialismID = "1", duration = "5" days, prerequisites = the course whose subjectID is "2".
+        
+3. ```student:Peter,M,60``` - Describes a Student having name = "Peter", gender = "M", age = "20".
 
-        Example 3: (describes a Student having name = "Peter", gender = "M", age = "20"):
-        student:Peter,M,60
+4. ```Teacher:Yvonne,F,55``` - Describes a Teacher having name = "Yvonne", gender = "F", age = "55".
 
-        Example 4: (describes a Teacher having name = "Yvonne", gender = "F", age = "55"):
-        Teacher:Yvonne,F,55
+#### 0.3.2 `PROPERTIES` format:
 
+`PROPERTIES` consist in a certain number of fields, separated by commas (no extra spaces), which describe every object property. 
+ The reader fetches all the lines and selects the data needed to create an Object of the specified class. 
 
-    0.3.2 PROPERTIES FORMAT:
-
-        PROPERTIES consists of a certain number of fields, separated by commas (no extra spaces), which describe every object property. 
-        The reader fetches all the lines and selects the data needed to create an Object of the specified class. 
-
-        For different classes the properties format looks as following:
-         - For School objects: [SchoolName, maxEnrollableCourses (optional), maxAssignableCourses (optional)].
-         - For Subject objects: [SubjectName, subjectID, specialismID, duration, prerequisite-prerequisite-prerequisite... (optionals)].
-         - For Person objects: [SubclassNameAsString (one of: Student, Teacher, Demonstrator, OOTrainer, GUITrainer), gender('M' or 'F'), age].
+For different classes the properties format looks as following:
+ * For School objects: \[SchoolName, maxEnrollableCourses (optional), maxAssignableCourses (optional)\].
+ * For Subject objects: \[SubjectName, subjectID, specialismID, duration, prerequisite-prerequisite-prerequisite... (optionals)\].
+ * For Person objects: \[SubclassNameAsString (one of: Student, Teacher, Demonstrator, OOTrainer, GUITrainer), gender('M' or 'F'), age\].
 
         Example PROPERTIES:
         school:UniversityOfSouthampton,2,2
