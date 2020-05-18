@@ -6,6 +6,7 @@ This repository contains the both Specifications and Source Code for the [COMP12
 
 The aim of this Coursework is to construct a simple simulation of a Java Training School. This school will admit students and they will receive training by a team of specialist instructors. 
 
+<br/>
 
 ### 0.1 - Information for markers:
 
@@ -20,20 +21,22 @@ Parts 1-6.
 3)  Allowed Instructors to be able to teach more than one Course in a day (up to a certain limit) and Students to enrol in more than on Course at a time (up to a certain limit). 
 
 **Note:** Extension 3 structurally interferes with the basic specification of the Coursework. Specifically, in order to store the courses assigned to an Instructor, being them more than one now, I am using an ArrayList of Courses rather than a single Course variable. This implies that the accessor method for an Instructor's assigned courses will now return an `ArrayList<Course>` rather than a `Course` object, therefore test TestPart3 cannot be passed unless modified.
- 
+
+<br/>
 
 ### 0.2  - Command Line usage:
-
     java Administrator [ConfigurationFileNme.txt] [Number Of Days]
 
-    To run the simulation, there must be provided a configuration file in the format specified in the documentation and a certain number of days to run the simulation for. 
-    In the configuration file it is possible to specify the maximum number of courses that a Student can enrol in and the maximum number of courses that an Instructor can teach,
-    but when it is not specified the default value of one Course is used.
-    Similarly, if prerequisites for a Subject are not specified, the subject will be automaticaly sat to not have any prerequisites.
+To run the simulation, there must be provided a configuration file in the format specified in the documentation and a certain number of days to run the simulation for. 
 
-    Example way of invoking the program:
-    java Administrator Configuration.txt 100
+In the configuration file it is possible to specify the maximum number of courses that a Student can enrol in and the maximum number of courses that an Instructor can teach, but when it is not specified the default value of one Course is used.
 
+Similarly, if prerequisites for a Subject are not specified, the subject will be automaticaly sat to not have any prerequisites.
+
+Example way of invoking the program:
+```java Administrator Configuration.txt 100```
+
+<br/>
 
 ### 0.3 -  Configuration File format:
 The simulator uses the format of the configuration file provided in the Coursework Specification. However, for the purposes of the extensions the format has been enhanced. 
