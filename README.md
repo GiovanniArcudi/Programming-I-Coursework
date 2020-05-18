@@ -43,6 +43,7 @@ The simulator uses the format of the configuration file provided in the Coursewo
 
 The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
+
 #### Valid `CLASS_NAME` examples:
 
 1. ```school:University of Southamptonn,2,2``` - Describes a school having name = "University of Southampton", maxEnrollableCourses = "2", maxAssignableCourses = "2".
@@ -52,6 +53,7 @@ The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 3. ```student:Peter,M,60``` - Describes a Student having name = "Peter", gender = "M", age = "20".
 
 4. ```Teacher:Yvonne,F,55``` - Describes a Teacher having name = "Yvonne", gender = "F", age = "55".
+
 
 #### Valid `PROPERTIES` format:
 
@@ -64,6 +66,7 @@ For different classes the properties format looks as following:
  * For Person objects: `[SubclassNameAsString (one of: Student, Teacher, Demonstrator, OOTrainer, GUITrainer), gender('M' or 'F'), age]`.
 
 Example `PROPERTIES`:
+
     school:UniversityOfSouthampton,2,2
     subject:Lab 1,2,2,2,1-3
     student:Annabelle,F,31
