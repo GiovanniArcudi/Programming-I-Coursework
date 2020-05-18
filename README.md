@@ -43,17 +43,19 @@ The simulator uses the format of the configuration file provided in the Coursewo
 
 The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
+<br/>
 
 #### Valid `CLASS_NAME` examples:
 
-1. ```school:University of Southamptonn,2,2``` - Describes a school having name = "University of Southampton", maxEnrollableCourses = "2", maxAssignableCourses = "2".
+1. ```school:University of Southamptonn,2,2``` - Describes a school having _name_ = "University of Southampton", _maxEnrollableCourses_ = "2", _maxAssignableCourses_ = "2".
 
-2. ```subject:Programming I, 1, 1, 5, 2``` - Describes a Subject having descriprtion = "Programming I", subjectID = "1", specialismID = "1", duration = "5" days, prerequisites = the course whose subjectID is "2".
+2. ```subject:Programming I, 1, 1, 5, 2``` - Describes a Subject having _descriprtion_ = "Programming I", _subjectID_ = "1", _specialismID_ = "1", _duration_ = "5" days, _prerequisites_ = the course whose _subjectID_ is "2".
         
-3. ```student:Peter,M,60``` - Describes a Student having name = "Peter", gender = "M", age = "20".
+3. ```student:Peter,M,60``` - Describes a Student having _name_ = "Peter", _gender_ = "M", _age_ = "20".
 
-4. ```Teacher:Yvonne,F,55``` - Describes a Teacher having name = "Yvonne", gender = "F", age = "55".
+4. ```Teacher:Yvonne,F,55``` - Describes a Teacher having _name_ = "Yvonne", _gender_ = "F", _age_ = "55".
 
+<br/>
 
 #### Valid `PROPERTIES` format:
 
@@ -73,6 +75,7 @@ Example `PROPERTIES`:
     Teacher:Yvonne,F,55
 
 <br/>
+
 
 ### Extensions
 
