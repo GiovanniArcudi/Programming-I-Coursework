@@ -43,7 +43,7 @@ The simulator uses the format of the configuration file provided in the Coursewo
 
 The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
-#### 0.3.1 - Valid `CLASS_NAME` examples:
+#### Valid `CLASS_NAME` examples:
 
 1. ```school:University of Southamptonn,2,2``` - Describes a school having name = "University of Southampton", maxEnrollableCourses = "2", maxAssignableCourses = "2".
 
@@ -53,27 +53,27 @@ The format consists of a `CLASS_NAME` and some `PROPERTIES`.
 
 4. ```Teacher:Yvonne,F,55``` - Describes a Teacher having name = "Yvonne", gender = "F", age = "55".
 
-#### 0.3.2 `PROPERTIES` format:
+#### Valid `PROPERTIES` format:
 
 `PROPERTIES` consist in a certain number of fields, separated by commas (no extra spaces), which describe every object property. 
  The reader fetches all the lines and selects the data needed to create an Object of the specified class. 
 
 For different classes the properties format looks as following:
- * For School objects: \[SchoolName, maxEnrollableCourses (optional), maxAssignableCourses (optional)\].
- * For Subject objects: \[SubjectName, subjectID, specialismID, duration, prerequisite-prerequisite-prerequisite... (optionals)\].
- * For Person objects: \[SubclassNameAsString (one of: Student, Teacher, Demonstrator, OOTrainer, GUITrainer), gender('M' or 'F'), age\].
+ * For School objects: `[SchoolName, maxEnrollableCourses (optional), maxAssignableCourses (optional)]`.
+ * For Subject objects: `[SubjectName, subjectID, specialismID, duration, prerequisite-prerequisite-prerequisite... (optionals)`].
+ * For Person objects: `[SubclassNameAsString (one of: Student, Teacher, Demonstrator, OOTrainer, GUITrainer), gender('M' or 'F'), age]`.
 
-        Example PROPERTIES:
-        school:UniversityOfSouthampton,2,2
-        subject:Lab 1,2,2,2,1-3
-        student:Annabelle,F,31
-        Teacher:Yvonne,F,55
+Example `PROPERTIES`:
+    school:UniversityOfSouthampton,2,2
+    subject:Lab 1,2,2,2,1-3
+    student:Annabelle,F,31
+    Teacher:Yvonne,F,55
 
+<br/>
 
+### Extensions
 
-### 1.0 - Extensions
-
-### 1.1 - Subjects Prerequisite
+#### Subjects Prerequisite
 Inspired by Coursework Specifications I have decided to implement possible prerequisites for each Subject object.
 
 This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
