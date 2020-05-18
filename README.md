@@ -9,21 +9,19 @@ The aim of this Coursework is to construct a simple simulation of a Java Trainin
 
 ### 0.1 - Information for markers:
 
-    Completed parts of the coursework: 
+*Completed parts of the Coursework*: 
     Parts 1-6.
 
-    Extensions to the coursework: 
-    1) JavaDoc documentation (which can be found in the doc subfolder)
-    2) Implemented the prerequisites for subjects and ensures that students can only enrol on a course if they
-       have all the prerequisites for that course.
-    3) Allowed Instructors to be able to teach more than one course in a day (up to a certain limit) and students
-       to enrol in more than on course at a time (up to a certain limit). 
+*Extensions to the Coursework*:
+1)  JavaDoc documentation (which can be found in the doc subfolder)
+2)  Implemented the prerequisites for subjects and ensures that students can only enrol on a course if they have all the prerequisites for that course.
+3)  Allowed Instructors to be able to teach more than one course in a day (up to a certain limit) and students to enrol in more than on course at a time (up to a certain limit). 
 
-    NOTE: Extension 3 structurally interferes with the basic specification of the Coursework.
-          Specifically, in order to store the courses assigned to an Instructor, being them more than one now, 
-          I am using an ArrayList of Courses rather than a single Course variable.
-          This implies that the accessor method for an Instructor's assigned courses will now return an 
-          ArrayList<Course> rather than a Course object, therefore test TestPart3 cannot be passed unless modified.
+**NOTE**: Extension 3 structurally interferes with the basic specification of the Coursework.
+
+Specifically, in order to store the courses assigned to an Instructor, being them more than one now, I am using an ArrayList of Courses rather than a single Course variable.
+
+This implies that the accessor method for an Instructor's assigned courses will now return an ArrayList<Course> rather than a Course object, therefore test TestPart3 cannot be passed unless modified.
  
 
 ### 0.2  - Command Line usage:
