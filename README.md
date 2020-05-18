@@ -77,9 +77,9 @@ Example `PROPERTIES`:
 <br/>
 
 
-### Extensions
+### 1.0 - Extensions
 
-#### Subjects Prerequisite
+#### 1.1 - Subjects Prerequisite
 Inspired by Coursework Specifications I have decided to implement possible prerequisites for each Subject object.
 
 This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
