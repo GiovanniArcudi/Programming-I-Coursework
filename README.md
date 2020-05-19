@@ -77,14 +77,14 @@ Example `PROPERTIES`:
 <br/>
 
 
-### Extensions
+## 1. Extensions
 
-#### 1. Subjects Prerequisite
-Inspired by Coursework Specifications I have decided to implement possible prerequisites for each Subject object.
+### 1.0 Subjects Prerequisite
+Inspired by Coursework Specifications I have decided to implement possible prerequisites for each ```Subject``` object.
 
 This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
 
-1.1 Modify the way the Configuration File is read by SimulationUtility
+### 1.1 Modify the way the Configuration File is read by SimulationUtility
 
 To implement this idea I firstly have added to the SimulationUtility's subjectCreator(String properties) method the functionality of reading properties strings with one extra property.
 
@@ -99,7 +99,7 @@ In this way, splitting the prerequisites String at every("-"), I easily obtained
         an ArrayList of Integers, specifically containing all the subjectsIDs of the subjects that a student is required to take before studing this one.
         In this ArrayList I added, one at a time, the subject prerequisite read in SimulationUtility's subjectCreator(String properties) method.
 
-    1.1.2 - Modify the critarion for which students are enrolled in a course
+    1.1.2 - Modify the criterion for which students are enrolled in a course
         Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course. In my code, this is done in Course's enrolStudent(Student student) method.
 
     1.1.3 - Update the toString() method in School and Subject
@@ -140,4 +140,5 @@ It simply returns an ArrayList of the students enrolled in at least one course.
 Despite being a very basic concept, checking if a student is enrolled to ad least one course has proven to be repeatedly useful throughout the project development, to avoid iterating through all of them many times.  
 
 ---
+
 _@author_ [_Giovanni Arcudi_](https://github.com/GiovanniArcudi)
