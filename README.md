@@ -79,12 +79,12 @@ Example `PROPERTIES`:
 
 ## 1. Extensions
 
-### 1.0 Subjects Prerequisite
+### 1.1 Subjects Prerequisite
 Inspired by Coursework Specifications I have decided to implement possible prerequisites for each ```Subject``` object.
 
 This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
 
-### 1.1 Modify the way the Configuration File is read by SimulationUtility
+### 1.2 Modify the way the Configuration File is read by SimulationUtility
 
 To implement this idea I firstly have added to the SimulationUtility's subjectCreator(String properties) method the functionality of reading properties strings with one extra property.
 
@@ -94,37 +94,37 @@ Of course, there is no limit to the number of possible prerequisites for a Subje
 
 In this way, splitting the prerequisites String at every("-"), I easily obtained the prerequisite for that subject, singularily.
 
-    1.1.2 - Add Prerequisites property to Subject's class
-        In oder to keep track of a Subject's prerequisites, I had to introduce a new property to the Subject's class: prerequisites,
-        an ArrayList of Integers, specifically containing all the subjectsIDs of the subjects that a student is required to take before studing this one.
-        In this ArrayList I added, one at a time, the subject prerequisite read in SimulationUtility's subjectCreator(String properties) method.
+#### 1.2.1 - Add Prerequisites property to Subject's class
+In oder to keep track of a Subject's prerequisites, I had to introduce a new property to the Subject's class: prerequisites,
+an ArrayList of Integers, specifically containing all the subjectsIDs of the subjects that a student is required to take before studing this one.
+In this ArrayList I added, one at a time, the subject prerequisite read in SimulationUtility's subjectCreator(String properties) method.
 
-    1.1.2 - Modify the criterion for which students are enrolled in a course
-        Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course. In my code, this is done in Course's enrolStudent(Student student) method.
+#### 1.2.2 - Modify the criterion for which students are enrolled in a course
+Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course. In my code, this is done in Course's enrolStudent(Student student) method.
 
-    1.1.3 - Update the toString() method in School and Subject
-        To finish, I updated the toString() method in School and Subject, taking into account that the Subjects now have a new property that has to be printed out.
+#### 1.2.3 - Update the toString() method in School and Subject
+To finish, I updated the toString() method in School and Subject, taking into account that the Subjects now have a new property that has to be printed out.
 
 
-### 1.2 - Multiple courses handling for Instructors and Students:
+### 1.3 - Multiple courses handling for Instructors and Students:
 Because I enjoyed working with the input handling from the configuration file, I decided to also implement the second of the proposed Extensions.
 
 Instructors are now able to teach more than one course in a day (up to a certain limit) and the students can enrol in more than one course at a time (up to a certain limit). 
     
-     1.2.1 - Modify the way the Configuration File is read by SimulationUtility
-        To implement this idea I firstly have added to the SimulationUtility's schoolCreator(String properties) the functionality of reading properties strings with one or two extra properties.
-        To do so, I had to take into account the case for which properties.split(",") is greater than 1 and store the extra properties (maxAssignableCourses and maxEnrollableCourses) in new Strings.
-        If maxAssignableCourses and maxEnrollableCourses are not specified they will by default be set to 1.
+#### 1.3.1 - Modify the way the Configuration File is read by SimulationUtility
+To implement this idea I firstly have added to the SimulationUtility's schoolCreator(String properties) the functionality of reading properties strings with one or two extra properties.
+To do so, I had to take into account the case for which properties.split(",") is greater than 1 and store the extra properties (maxAssignableCourses and maxEnrollableCourses) in new Strings.
+If maxAssignableCourses and maxEnrollableCourses are not specified they will by default be set to 1.
 
-    1.2.2 - Add Prerequisites property to SChool's class
-        In oder to keep track of the maxAssignableCourses and maxEnrollableCourses, I had to introduce 2 new properties to the School's class: int maxAssignableCourses and int axEnrollableCourses.
+#### 1.3.2 - Add Prerequisites property to School's class
+In oder to keep track of the maxAssignableCourses and maxEnrollableCourses, I had to introduce 2 new properties to the School's class: int maxAssignableCourses and int axEnrollableCourses.
+        
+#### 1.3.3 - Modify the critarion for which students are enrolled in a course and instructors are assigned to a course
+Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course and an instructor assigned to a course.
+In my code, this is done in School's assignInstructorToEachCourse() method and in School's enrolFreeStudents() method.
 
-    1.2.3 - Modify the critarion for which students are enrolled in a course and instructors are assigned to a course
-        Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course and an instructor assigned to a course.
-        In my code, this is done in School's assignInstructorToEachCourse() method and in School's enrolFreeStudents() method.
 
-
-### 1.3 - Person Generator:
+### 1.4 - Person Generator:
 To have a more realistic simulation I decided to implement a Person Generator.
 
 Using the `createPerson(String)` method it creates a new `Person` object of the specified subclass, taking a random name and gender from the `RANDOM_NAMES_AND_GENDERS` 20x2 matrix and random generated age.
@@ -133,7 +133,7 @@ It also keeps in consideration that the age limit for a Student is lower than th
 Being all self contained in the `PersonGenerator` class, I suggest to read the more detailed methods description from there.
 
 
-### 1.4 - Scheduling Updates:
+### 1.5 - Scheduling Updates:
 To improve the general performance of the code I added a method to the School class: `getActiveStudents()`.
 It simply returns an ArrayList of the students enrolled in at least one course. 
 
