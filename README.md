@@ -84,6 +84,8 @@ Inspired by Coursework Specifications I have decided to implement possible prere
 
 This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
 
+<br/>
+
 ### 1.2 Modify the way the Configuration File is read by SimulationUtility
 
 To implement this idea I firstly have added to the SimulationUtility's subjectCreator(String properties) method the functionality of reading properties strings with one extra property.
@@ -105,6 +107,7 @@ Of course, once the prerequisites are stored they have to be checked every time 
 #### 1.2.3 - Update the toString() method in School and Subject
 To finish, I updated the toString() method in School and Subject, taking into account that the Subjects now have a new property that has to be printed out.
 
+<br/>
 
 ### 1.3 - Multiple courses handling for Instructors and Students:
 Because I enjoyed working with the input handling from the configuration file, I decided to also implement the second of the proposed Extensions.
@@ -123,6 +126,7 @@ In oder to keep track of the maxAssignableCourses and maxEnrollableCourses, I ha
 Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course and an instructor assigned to a course.
 In my code, this is done in School's assignInstructorToEachCourse() method and in School's enrolFreeStudents() method.
 
+<br/>
 
 ### 1.4 - Person Generator:
 To have a more realistic simulation I decided to implement a Person Generator.
@@ -132,6 +136,7 @@ Using the `createPerson(String)` method it creates a new `Person` object of the 
 It also keeps in consideration that the age limit for a Student is lower than the one of an Instructor.
 Being all self contained in the `PersonGenerator` class, I suggest to read the more detailed methods description from there.
 
+<br/>
 
 ### 1.5 - Scheduling Updates:
 To improve the general performance of the code I added a method to the School class: `getActiveStudents()`.
