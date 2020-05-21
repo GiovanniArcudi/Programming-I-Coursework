@@ -82,17 +82,17 @@ Example `PROPERTIES`:
 ### 1.1 Subjects Prerequisite
 Inspired by Coursework Specifications I have decided to implement possible prerequisites for each ```Subject``` object.
 
-This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by subjectID) to be able to enroll in a course about a specific subject.
+This means that the user is able, via the configuration file, to decide if a student has to obtain the certificate for other subjects (specifing which of them by ```subjectID```) to be able to enroll in a course about a specific subject.
 
 <br/>
 
 ### 1.2 Modify the way the Configuration File is read by SimulationUtility
 
-To implement this idea I firstly have added to the SimulationUtility's subjectCreator(String properties) method the functionality of reading properties strings with one extra property.
+To implement this idea I firstly have added to the ```SimulationUtility```'s ```subjectCreator(String properties)``` method the functionality of reading properties strings with one extra property.
 
-To do so, I had to take into account the case for which properties.split(",") is equal to 5 and store the extra property (prerequisites) in a new String.
+To do so, I had to take into account the case for which ```properties.split(",")``` is equal to 5 and store the extra property (prerequisites) in a new String.
 
-Of course, there is no limit to the number of possible prerequisites for a Subject so, I decided that, if more than more presequisite is to be added it should be used "-" to separate the subjectIDs.
+Of course, there is no limit to the number of possible prerequisites for a Subject so, I decided that, if more than one presequisite is to be added it should be used "-" to separate the subjectIDs.
 
 In this way, splitting the prerequisites String at every("-"), I easily obtained the prerequisite for that subject, singularily.
 
