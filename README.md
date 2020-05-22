@@ -146,4 +146,4 @@ Despite being a very basic concept, checking if a student is enrolled to ad leas
 
 ---
 
-_@author_ [_Giovanni Arcudi_](https://github.com/GiovanniArcudi)
+_Author:_ [_Giovanni Arcudi_](https://github.com/GiovanniArcudi)
