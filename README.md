@@ -16,7 +16,7 @@ Parts 1-6.
 ***Extensions to the Coursework:***
 1)  JavaDoc documentation (which can be found in the doc subfolder).
 
-2)  Implemented the prerequisites for Subjects and ensures that Students can only enrol on a course if they have all the prerequisites for that Course.
+2)  Implemented the prerequisites for Subjects and ensured that Students can only enrol on a course if they have all the prerequisites for that Course.
 
 3)  Allowed Instructors to be able to teach more than one Course in a day (up to a certain limit) and Students to enrol in more than on Course at a time (up to a certain limit). 
 
