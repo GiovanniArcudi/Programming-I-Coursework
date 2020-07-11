@@ -120,7 +120,7 @@ To do so, I had to take into account the case for which properties.split(",") is
 If maxAssignableCourses and maxEnrollableCourses are not specified they will by default be set to 1.
 
 #### 1.3.2 - Add Prerequisites property to School's class
-In oder to keep track of the maxAssignableCourses and maxEnrollableCourses, I had to introduce 2 new properties to the School's class: int maxAssignableCourses and int axEnrollableCourses.
+In order to keep track of the maxAssignableCourses and maxEnrollableCourses, I had to introduce 2 new properties to the School's class: int maxAssignableCourses and int axEnrollableCourses.
         
 #### 1.3.3 - Modify the criterion for which students are enrolled in a course and instructors are assigned to a course
 Of course, once the prerequisites are stored they have to be checked every time a student is about to be enrolled in a new course and an instructor assigned to a course.
